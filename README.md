@@ -6,6 +6,7 @@ This repository contains an improved Python implementation of a Self-Organizing 
 3. A dockerfile is prepared for environment setup.
 4. Unittests are written to test correctness of the functions, and to detect and fix bugs early.
 5. Variables with Non-ASCII characters in their names are renamed to ensure compatibility with other environments. 
+6. Seeds are fixed to ensure that the modularised code produces the same output as the original code.
 
 ## Usage
 
@@ -34,7 +35,8 @@ plt.imsave('100.png', image_data)
 plt.imshow(image_data)
 ```
 
-The produced output by the refactored code and the original code are shown below (using ```seed=99```)
+The produced output by the refactored code and the original code are shown below (using ```seed=99```). These results are provided in the notebook file. 
+
 num iterations=100, width=10, height=10     |  num iterations=1000, width=100, height=100     | 
 :-------------------------:|:-------------------------:
 <img src="notebook/100.png" width=600> | <img src="notebook/1000.png" width=600> |
